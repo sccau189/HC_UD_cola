@@ -4,3 +4,84 @@
     box-sizing: border-box;
     font-family: 微軟正黑體;
 }
+
+// 導覽頁
+nav{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 30px 100px;
+    position: fixed;
+    top: 0;
+    background:rgba($color: white, $alpha: 0.5);
+    color: black;
+    width: 100%;
+    #logo{
+        img{
+            width: 150px ;
+            height: auto;
+            text-align: left;       
+        }    
+    }
+    #news{
+        text-align:right;
+        padding: 30px auto;
+        font-size: 20px;
+        
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 30px;
+        }
+    }   
+}
+
+#banner{
+    background-color: #a9d2ec;
+    text-align: center;
+    img{
+        margin-top: 100px;
+    }
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    width: 100%;
+    span{
+        font-size: 20px;
+        text-align: center;
+        background: #c7e4dd;
+        color:black;
+        border-radius: 10px;
+        padding: 10px 10px;
+        margin: 10px;
+    }
+}
+ #content{
+     width: 1280px;
+     margin: 0 auto;
+ }
+
+ #hotshow{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 20px;
+     > div{
+         border: 1px solid gray;
+     }
+     img{
+         width: 100%;
+        height: 300px;
+         object-fit: cover;
+         align-items: center;
+        
+     }
+     h5{
+         color: black;
+         margin: 20px;
+         font-size: 20px;
+     }
+     p{
+         color: black;
+     }
+ }
